@@ -1,38 +1,79 @@
 .App {
-  text-align: center;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Display {
+    width: 25%;
+
+    margin-top: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.Form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.Form span {
+    width: 100%;
+
+    padding: 3px;
+
+    background-color: lightgray;
+
+    display: flex;
+    align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.Form span, .Form input {
+    border: none;
+    border-radius: 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Form label, .Form input {
+    height: 2.5em;
+}
+
+.Form label {
+    width: 25%;
+
+    display: flex;
+    align-items: center;
+}
+
+.Form input {
+    width: 75%;
+}
+
+.Values, .Values table {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.Values table tr {
+    width: 100%;
+}
+
+.Values table tr {
+    display: flex;
+}
+
+.Values table tr td {
+    width: 50%;
+}
+
+.Header {
+    width: 100%;
+
+    margin: 10px 0;
+
+    text-align: center;
 }
